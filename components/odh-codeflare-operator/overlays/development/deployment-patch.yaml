@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: odh-codeflare-operator
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhoai-tenant/codeflare/odh-codeflare-operator@sha256:52a6f8b4813231c0acc05458a03ae9d5014bff3168d36d699e7ea757b2cb78e7
+        name: container-image
+        resources: {}
+status: {}
